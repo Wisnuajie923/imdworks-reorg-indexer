@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "title": "Implement a reorg-safe bounty event indexer",
+  "bounty_uuid": "13608b4b-68c5-463e-9aed-ed734c0ef51f",
+  "bounty_number": 7,
+  "escrow_id": 2,
+  "chain_id": 4663,
+  "author": "0xD7AFdc66e0C1Cca76Aca8537f30d10a324E246f1",
+  "signoff": "enueex https://x.com/AjaPawang",
+  "repository": "https://github.com/Wisnuajie923/imdworks-reorg-indexer",
+  "repository_commit": "1292b4aa24b1fab3ce9046684a20cde52998bb94",
+  "reproduction": "git clone https://github.com/Wisnuajie923/imdworks-reorg-indexer.git && cd imdworks-reorg-indexer && git checkout 1292b4aa24b1fab3ce9046684a20cde52998bb94 && python3 run_tests.py",
+  "artifact_url": "https://codeload.github.com/Wisnuajie923/imdworks-reorg-indexer/tar.gz/1292b4aa24b1fab3ce9046684a20cde52998bb94",
+  "artifact_sha256": "0b37eca2f89d84419e4806ade8ef1de7650b29fbbce70f05e12f9fc986d6391b",
+  "report_url": "https://raw.githubusercontent.com/Wisnuajie923/imdworks-reorg-indexer/1292b4aa24b1fab3ce9046684a20cde52998bb94/report.json",
+  "report_sha256": "46f6f290520a792c01120797ac85861db0b953482ef5b57466b33563780a8600",
+  "fresh_archive_replay_exit": 0,
+  "dependencies": "Python standard library; pinned solc binary for #14",
+  "limitations": [
+    "Creator-selected 1 USDG reward; submission does not guarantee payment.",
+    "No wallet, credential, approval, transfer or withdrawal is part of the artifact.",
+    "#14 compares pinned Sourcify runtime input and explicitly does not claim fresh RPC-chain data."
+  ],
+  "results": {
+    "tests": 4,
+    "restart": true,
+    "reorg": true
+  }
+}
