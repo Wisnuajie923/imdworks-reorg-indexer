@@ -1,0 +1,304 @@
+{
+  "genesis": "0x71b42f5e3635b8484a171cf17964b07414f817eb77aff7c6ec03bedbd059758e",
+  "left": [
+    {
+      "hash": "0x8e07d258c6b3b46533ef0860bbd95f1d813d3d036e93fb4150088db68566ee87",
+      "height": 1,
+      "logs": [
+        {
+          "args": {
+            "bountyId": 1,
+            "briefHash": "0x505f3f0076f6b0019b56077c068649eea13cf21bd21bd1b48301d2201476c3dd",
+            "briefURI": "local:1",
+            "creator": "0x0000000000000000000000000000000000000001",
+            "deadline": 1000,
+            "reward": 100
+          },
+          "event": "BountyCreated",
+          "logIndex": 0,
+          "transactionHash": "0x7d097f731d2c94107121c4ca9c1463cf357e618a29897a4dca47873d1ee33945",
+          "transactionIndex": 0
+        },
+        {
+          "args": {
+            "bountyId": 2,
+            "briefHash": "0xb507f6c56823177c508b849bd61768e1f275dce772ada92f68eb193bbabbe2a9",
+            "briefURI": "local:2",
+            "creator": "0x0000000000000000000000000000000000000001",
+            "deadline": 1000,
+            "reward": 60
+          },
+          "event": "BountyCreated",
+          "logIndex": 1,
+          "transactionHash": "0x880e17d04b2a8274531ef938911397e101a8f4084d3669c113c98c25a78388a9",
+          "transactionIndex": 1
+        }
+      ],
+      "parent": "0x71b42f5e3635b8484a171cf17964b07414f817eb77aff7c6ec03bedbd059758e"
+    },
+    {
+      "hash": "0xe6de5d7b9b2aaf4f73a32cba94af0dbbd11590c2308e5629db12347f738636ce",
+      "height": 2,
+      "logs": [
+        {
+          "args": {
+            "author": "0x0000000000000000000000000000000000000002",
+            "bountyId": 1,
+            "operator": "0x0000000000000000000000000000000000000002",
+            "proofHash": "0x8e1fa5cd035b30e5d5818934dbc7491fe44f4ab15d30b3abcbc01d44edf25f18",
+            "proofURI": "local:proof1"
+          },
+          "event": "WorkSubmitted",
+          "logIndex": 0,
+          "transactionHash": "0x06b59da280c67097fee53b3cf1887ef5113ea76c84608bcaa953bbd65823ba23",
+          "transactionIndex": 0
+        }
+      ],
+      "parent": "0x8e07d258c6b3b46533ef0860bbd95f1d813d3d036e93fb4150088db68566ee87"
+    },
+    {
+      "hash": "0xc9b7149abddb0e0269a8c3813cd1991553c20ca44f1d0da9846e6df5f4e8e885",
+      "height": 3,
+      "logs": [
+        {
+          "args": {
+            "author": "0x0000000000000000000000000000000000000003",
+            "bountyId": 1,
+            "operator": "0x0000000000000000000000000000000000000003",
+            "proofHash": "0x88f6811ab5d8fc6d3177f9b7609ae0fcebfda187e5046b62d38bb539e88b74d7",
+            "proofURI": "local:orphan"
+          },
+          "event": "WorkSubmitted",
+          "logIndex": 0,
+          "transactionHash": "0xa1f3fcfc05a38d536102159fb8ebfb3e77ad1b38d6d047e1faaf827c2cc4ada4",
+          "transactionIndex": 0
+        }
+      ],
+      "parent": "0xe6de5d7b9b2aaf4f73a32cba94af0dbbd11590c2308e5629db12347f738636ce"
+    },
+    {
+      "hash": "0x8f1aaaade56bf12061e132dc2f88d3d8f00c770787ce37276e7f0fe3fd720fd3",
+      "height": 4,
+      "logs": [
+        {
+          "args": {
+            "amount": 100,
+            "bountyId": 1,
+            "winner": "0x0000000000000000000000000000000000000003"
+          },
+          "event": "BountyAwarded",
+          "logIndex": 0,
+          "transactionHash": "0xa3600dcf787cdfbb9c9c364585f2f7d645ecded9ffe3e9eb69f1059b0b0e3bf2",
+          "transactionIndex": 0
+        }
+      ],
+      "parent": "0xc9b7149abddb0e0269a8c3813cd1991553c20ca44f1d0da9846e6df5f4e8e885"
+    },
+    {
+      "hash": "0xb6ccc82bebb90ddeeb8910aa64ea9ab83d01497ace12fc49854e40d0cad9fdf9",
+      "height": 5,
+      "logs": [
+        {
+          "args": {
+            "account": "0x0000000000000000000000000000000000000003",
+            "amount": 100,
+            "recipient": "0x0000000000000000000000000000000000000003"
+          },
+          "event": "Withdrawn",
+          "logIndex": 0,
+          "transactionHash": "0x6541a7218fcf8fe480a9f1b9b9ac059e1b3792bec8f380d907a3a6d0af34d74c",
+          "transactionIndex": 0
+        }
+      ],
+      "parent": "0x8f1aaaade56bf12061e132dc2f88d3d8f00c770787ce37276e7f0fe3fd720fd3"
+    },
+    {
+      "hash": "0xbaeadb922caa81f61881fe68d3b729f0ee4f19c3a7ecbb0435562fda4ccfac0d",
+      "height": 6,
+      "logs": [
+        {
+          "args": {
+            "amount": 60,
+            "bountyId": 2,
+            "creator": "0x0000000000000000000000000000000000000001",
+            "status": 3
+          },
+          "event": "BountyRefunded",
+          "logIndex": 0,
+          "transactionHash": "0x50d7a441f16da5c490e8a836d7e7ee7f54fa7aa7fd9ee2d0afbf94b675a980da",
+          "transactionIndex": 0
+        }
+      ],
+      "parent": "0xb6ccc82bebb90ddeeb8910aa64ea9ab83d01497ace12fc49854e40d0cad9fdf9"
+    },
+    {
+      "hash": "0x8cc462bd061c5b785493c227284bbc1ea1b8dd923c174fb3d1052757d247b0c7",
+      "height": 7,
+      "logs": [
+        {
+          "args": {
+            "account": "0x0000000000000000000000000000000000000001",
+            "amount": 60,
+            "recipient": "0x0000000000000000000000000000000000000001"
+          },
+          "event": "Withdrawn",
+          "logIndex": 0,
+          "transactionHash": "0xd8a79b0e4140c92af7d3fe9a8dae8e81adf8992837b74c3fd22524ca1be88029",
+          "transactionIndex": 0
+        }
+      ],
+      "parent": "0xbaeadb922caa81f61881fe68d3b729f0ee4f19c3a7ecbb0435562fda4ccfac0d"
+    }
+  ],
+  "right": [
+    {
+      "hash": "0x8e07d258c6b3b46533ef0860bbd95f1d813d3d036e93fb4150088db68566ee87",
+      "height": 1,
+      "logs": [
+        {
+          "args": {
+            "bountyId": 1,
+            "briefHash": "0x505f3f0076f6b0019b56077c068649eea13cf21bd21bd1b48301d2201476c3dd",
+            "briefURI": "local:1",
+            "creator": "0x0000000000000000000000000000000000000001",
+            "deadline": 1000,
+            "reward": 100
+          },
+          "event": "BountyCreated",
+          "logIndex": 0,
+          "transactionHash": "0x7d097f731d2c94107121c4ca9c1463cf357e618a29897a4dca47873d1ee33945",
+          "transactionIndex": 0
+        },
+        {
+          "args": {
+            "bountyId": 2,
+            "briefHash": "0xb507f6c56823177c508b849bd61768e1f275dce772ada92f68eb193bbabbe2a9",
+            "briefURI": "local:2",
+            "creator": "0x0000000000000000000000000000000000000001",
+            "deadline": 1000,
+            "reward": 60
+          },
+          "event": "BountyCreated",
+          "logIndex": 1,
+          "transactionHash": "0x880e17d04b2a8274531ef938911397e101a8f4084d3669c113c98c25a78388a9",
+          "transactionIndex": 1
+        }
+      ],
+      "parent": "0x71b42f5e3635b8484a171cf17964b07414f817eb77aff7c6ec03bedbd059758e"
+    },
+    {
+      "hash": "0xe6de5d7b9b2aaf4f73a32cba94af0dbbd11590c2308e5629db12347f738636ce",
+      "height": 2,
+      "logs": [
+        {
+          "args": {
+            "author": "0x0000000000000000000000000000000000000002",
+            "bountyId": 1,
+            "operator": "0x0000000000000000000000000000000000000002",
+            "proofHash": "0x8e1fa5cd035b30e5d5818934dbc7491fe44f4ab15d30b3abcbc01d44edf25f18",
+            "proofURI": "local:proof1"
+          },
+          "event": "WorkSubmitted",
+          "logIndex": 0,
+          "transactionHash": "0x06b59da280c67097fee53b3cf1887ef5113ea76c84608bcaa953bbd65823ba23",
+          "transactionIndex": 0
+        }
+      ],
+      "parent": "0x8e07d258c6b3b46533ef0860bbd95f1d813d3d036e93fb4150088db68566ee87"
+    },
+    {
+      "hash": "0x9666fb333a96aa866e93f1a53c294dabe14bbcf293a05cac45352c9e600fd4e9",
+      "height": 3,
+      "logs": [
+        {
+          "args": {
+            "author": "0x0000000000000000000000000000000000000002",
+            "bountyId": 1,
+            "operator": "0x0000000000000000000000000000000000000002",
+            "proofHash": "0x27eb5e51506c911f6fc4bb345c0d9db6f60415fceab7c18e1e9b862637415777",
+            "proofURI": "local:updated"
+          },
+          "event": "WorkSubmitted",
+          "logIndex": 0,
+          "transactionHash": "0x2780482fae58b62c0b9152c956413811bdc12b20a5e6f5d826f0fa56304b07ef",
+          "transactionIndex": 0
+        }
+      ],
+      "parent": "0xe6de5d7b9b2aaf4f73a32cba94af0dbbd11590c2308e5629db12347f738636ce"
+    },
+    {
+      "hash": "0xe54a5ecde0a7dfd2da6c00264e795ac49144c88ae959a3e8700fbe8f97fd0a6e",
+      "height": 4,
+      "logs": [
+        {
+          "args": {
+            "amount": 100,
+            "bountyId": 1,
+            "winner": "0x0000000000000000000000000000000000000002"
+          },
+          "event": "BountyAwarded",
+          "logIndex": 0,
+          "transactionHash": "0x62fe705eb0d932696fe191562006f2a61473f76d30ac3e192ab6b83d3563d488",
+          "transactionIndex": 0
+        }
+      ],
+      "parent": "0x9666fb333a96aa866e93f1a53c294dabe14bbcf293a05cac45352c9e600fd4e9"
+    },
+    {
+      "hash": "0xd07f6ae98bac4cc000d795b629f5851ba575c30a40f2f3f5717a1b1b4746caf8",
+      "height": 5,
+      "logs": [
+        {
+          "args": {
+            "amount": 60,
+            "bountyId": 2,
+            "creator": "0x0000000000000000000000000000000000000001",
+            "status": 3
+          },
+          "event": "BountyRefunded",
+          "logIndex": 0,
+          "transactionHash": "0x95dd54e5758d41800edbe68f4f1c5f5389f735e597d06e9a5a57fc5fdb3f9d6c",
+          "transactionIndex": 0
+        }
+      ],
+      "parent": "0xe54a5ecde0a7dfd2da6c00264e795ac49144c88ae959a3e8700fbe8f97fd0a6e"
+    },
+    {
+      "hash": "0xbc11c0b54e921df67097f2b1c9e8ed40c4240e8197f45e56c9ccce51792bdf77",
+      "height": 6,
+      "logs": [
+        {
+          "args": {
+            "account": "0x0000000000000000000000000000000000000002",
+            "amount": 100,
+            "recipient": "0x0000000000000000000000000000000000000003"
+          },
+          "event": "Withdrawn",
+          "logIndex": 0,
+          "transactionHash": "0x4adaa2e1ddf9d31627feae6de395f2906ad2a8d9226cf92b2b2b3f63e515618b",
+          "transactionIndex": 0
+        }
+      ],
+      "parent": "0xd07f6ae98bac4cc000d795b629f5851ba575c30a40f2f3f5717a1b1b4746caf8"
+    },
+    {
+      "hash": "0x4556b3112b8337cf5ba7f53cde0b784a3748dcf58b906dbcdc4234215348103c",
+      "height": 7,
+      "logs": [
+        {
+          "args": {
+            "account": "0x0000000000000000000000000000000000000001",
+            "amount": 60,
+            "recipient": "0x0000000000000000000000000000000000000001"
+          },
+          "event": "Withdrawn",
+          "logIndex": 0,
+          "transactionHash": "0xb0657318d0ccb8932a47711b9b72a2f313fe50e77c88326b681ec897f5421b6d",
+          "transactionIndex": 0
+        }
+      ],
+      "parent": "0xbc11c0b54e921df67097f2b1c9e8ed40c4240e8197f45e56c9ccce51792bdf77"
+    }
+  ],
+  "seed": 7
+}

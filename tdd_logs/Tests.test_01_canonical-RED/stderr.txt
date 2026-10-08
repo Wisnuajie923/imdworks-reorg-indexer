@@ -1,0 +1,17 @@
+F
+======================================================================
+FAIL: test_01_canonical (__main__.Tests.test_01_canonical)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/imdworks-work/reorg-indexer/run_tests.py", line 79, in test_01_canonical
+    x = indexer()(db('canonical'), F['genesis'])
+        ^^^^^^^^^
+  File "/root/imdworks-work/reorg-indexer/run_tests.py", line 65, in indexer
+    assert (ROOT / 'indexer.py').exists(), 'missing canonical indexer implementation'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: missing canonical indexer implementation
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)

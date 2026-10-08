@@ -1,0 +1,23 @@
+{
+  "errors": 0,
+  "expected_failures": 0,
+  "failures": 0,
+  "process_interruption_evidence": [
+    {
+      "child_exit": 75,
+      "kind": "process_restart_after_log_before_checkpoint",
+      "replay_equal": true,
+      "rollback_verified": true
+    }
+  ],
+  "skipped": 0,
+  "successful": true,
+  "tests_run": 4,
+  "trace_event_counts": {
+    "canonical": 1,
+    "duplicate_out_of_order": 1,
+    "five_block_reorg": 1,
+    "process_restart_after_log_before_checkpoint": 1
+  },
+  "unexpected_successes": 0
+}

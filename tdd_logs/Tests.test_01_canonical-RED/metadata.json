@@ -1,0 +1,13 @@
+{
+  "phase": "RED",
+  "test": "Tests.test_01_canonical",
+  "exit": 1,
+  "command": [
+    "/root/hermes-agent/venv/bin/python3",
+    "/root/imdworks-work/reorg-indexer/run_tests.py",
+    "Tests.test_01_canonical"
+  ],
+  "source_sha256": {
+    "run_tests.py": "b8e145b3ca3fb6c536a247a43185b29e0f20cb87261dca2e4d56fe516d81caf3"
+  }
+}

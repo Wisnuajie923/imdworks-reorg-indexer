@@ -1,0 +1,19 @@
+E
+======================================================================
+ERROR: test_03_reorg (__main__.Tests.test_03_reorg)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/imdworks-work/reorg-indexer/run_tests.py", line 82, in test_03_reorg
+    x.ingest(list(reversed(F['right'][2:])), F['right'][-1]['hash'])
+  File "/root/imdworks-work/reorg-indexer/indexer.py", line 56, in ingest
+    state = reduce_logs(logs)
+            ^^^^^^^^^^^^^^^^^
+  File "/root/imdworks-work/reorg-indexer/indexer.py", line 23, in reduce_logs
+    state['bounties'][key].update(status='awarded', winner=a['winner'])
+    ~~~~~~~~~~~~~~~~~^^^^^
+KeyError: '1'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.264s
+
+FAILED (errors=1)

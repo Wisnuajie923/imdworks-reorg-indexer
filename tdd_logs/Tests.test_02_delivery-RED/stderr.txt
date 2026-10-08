@@ -1,0 +1,19 @@
+E
+======================================================================
+ERROR: test_02_delivery (__main__.Tests.test_02_delivery)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/root/imdworks-work/reorg-indexer/run_tests.py", line 84, in test_02_delivery
+    x.ingest(batch, F['right'][-1]['hash'])
+  File "/root/imdworks-work/reorg-indexer/indexer.py", line 51, in ingest
+    state = reduce_logs(logs)
+            ^^^^^^^^^^^^^^^^^
+  File "/root/imdworks-work/reorg-indexer/indexer.py", line 30, in reduce_logs
+    state['claimable'][account] -= amount
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyError: '0x0000000000000000000000000000000000000001'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.259s
+
+FAILED (errors=1)

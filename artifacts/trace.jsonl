@@ -1,0 +1,4 @@
+{"blocks": 7, "kind": "canonical", "logs": 8, "submissions": 1}
+{"canonical_logs": 8, "delivered_blocks": 8, "delivered_logs": 10, "kind": "duplicate_out_of_order", "replay_equal": true, "unique_blocks": 7}
+{"kind": "five_block_reorg", "removed_hashes": ["0x8cc462bd061c5b785493c227284bbc1ea1b8dd923c174fb3d1052757d247b0c7", "0x8f1aaaade56bf12061e132dc2f88d3d8f00c770787ce37276e7f0fe3fd720fd3", "0xb6ccc82bebb90ddeeb8910aa64ea9ab83d01497ace12fc49854e40d0cad9fdf9", "0xbaeadb922caa81f61881fe68d3b729f0ee4f19c3a7ecbb0435562fda4ccfac0d", "0xc9b7149abddb0e0269a8c3813cd1991553c20ca44f1d0da9846e6df5f4e8e885"], "replay_equal": true}
+{"child_exit": 75, "kind": "process_restart_after_log_before_checkpoint", "replay_equal": true, "rollback_verified": true}

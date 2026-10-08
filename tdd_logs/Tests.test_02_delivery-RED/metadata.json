@@ -1,0 +1,14 @@
+{
+  "phase": "RED",
+  "test": "Tests.test_02_delivery",
+  "exit": 1,
+  "command": [
+    "/root/hermes-agent/venv/bin/python3",
+    "/root/imdworks-work/reorg-indexer/run_tests.py",
+    "Tests.test_02_delivery"
+  ],
+  "source_sha256": {
+    "run_tests.py": "a9a67e0990d94a4ec87ee54e3fc1e14e5a6eebf91e766e9c73ec4755c8ad45ee",
+    "indexer.py": "facb487854ed836a4e91c0db07b52ef8477b88d161139ce992b7ebbc201195a6"
+  }
+}
